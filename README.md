@@ -7,8 +7,8 @@ graph TD
     TurtleBot["Turtle Bot"]
     RemoteProtocol["Remote protocol: TCP/IP"]
 
-    CM -->|Depth & color image| IntelRealSense
+    CM -->|Depth and color image| IntelRealSense
     CM -->|Turtlebot Command| TurtleBot
-    JetsonNano -->|Control: ROS2 (dashing)| TurtleBot
+    JetsonNano -->|ROS2 control| TurtleBot
     TurtleBot --> RemoteProtocol
 ```
