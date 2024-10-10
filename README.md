@@ -1,19 +1,14 @@
 # my-project
 ```mermaid
 graph TD
-    subgraph CM[CM (command center): PC]
-    A[Human detection, gesture recognition]
-    end
+    CM["CM (Command Center): PC\nHuman detection, gesture recognition"]
+    IntelRealSense["Intel RealSense"]
+    JetsonNano["Jetson Nano"]
+    TurtleBot["Turtle Bot"]
+    RemoteProtocol["Remote protocol: TCP/IP"]
 
-    subgraph HW[Hardware]
-    B[Intel Realsense]
-    C[Jetson Nano]
-    D[Turtle Bot]
-    end
-
-    CM -->|Depth & color image| B
-    CM -->|Turtlebot Command| D
-    HW -->|Control: ROS2 (dashing)| D
-    E[Remote protocol: TCP/IP]
-    D --> E
+    CM -->|Depth & color image| IntelRealSense
+    CM -->|Turtlebot Command| TurtleBot
+    IntelRealSense -->|Control: ROS2 (dashing)| TurtleBot
+    TurtleBot --> RemoteProtocol
 ```
