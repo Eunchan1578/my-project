@@ -9,6 +9,6 @@ graph TD
 
     CM -->|Depth & color image| IntelRealSense
     CM -->|Turtlebot Command| TurtleBot
-    IntelRealSense -->|Control: ROS2 (dashing)| TurtleBot
+    JetsonNano -->|Control: ROS2 (dashing)| TurtleBot
     TurtleBot --> RemoteProtocol
 ```
