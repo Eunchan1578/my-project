@@ -1,11 +1,19 @@
 # my-project
 ```mermaid
 graph TD
-    Client -->|HTTP Request| WebServer
-    WebServer -->|Fetches Data| Database
-    WebServer -->|Sends Response| Client
-    WebServer -->|Calls Service| ExternalService
-    ExternalService -->|Returns Data| WebServer
-    Database -->|Stores Data| Storage
-    Storage -->|Retrieves Data| Database
+    subgraph CM[CM (command center): PC]
+    A[Human detection, gesture recognition]
+    end
+
+    subgraph HW[Hardware]
+    B[Intel Realsense]
+    C[Jetson Nano]
+    D[Turtle Bot]
+    end
+
+    CM -->|Depth & color image| B
+    CM -->|Turtlebot Command| D
+    HW -->|Control: ROS2 (dashing)| D
+    E[Remote protocol: TCP/IP]
+    D --> E
 ```
