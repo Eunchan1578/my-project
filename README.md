@@ -1,7 +1,7 @@
 # my-project
 ```mermaid
 graph TD
-    CM["CM (Command Center): PC\nHuman detection, gesture recognition"]
+    CM["CM (Command Center): PC<br>Human detection, gesture recognition"]
     IntelRealSense["Intel RealSense"]
     JetsonNano["Jetson Nano"]
     TurtleBot["Turtle Bot"]
