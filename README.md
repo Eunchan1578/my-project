@@ -12,3 +12,6 @@ graph TD
     JetsonNano -->|ROS2 control| TurtleBot
     TurtleBot --> RemoteProtocol
 ```
+
+
+![HDL](./Screenshot from 2024-10-11 08-50-22.png)
