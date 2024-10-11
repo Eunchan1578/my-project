@@ -14,4 +14,4 @@ graph TD
 ```
 
 
-![HDL](./Screenshot from 2024-10-11 08-50-22.png)
+![HDL](./HDL.png)
