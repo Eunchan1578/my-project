@@ -14,4 +14,4 @@ graph TD
 ```
 
 
-![HDL](./HDL.png)
+![HDL](./HLD.png)
