@@ -19,3 +19,8 @@ graph TD
 
 # HLD2
 ![HDL2](./HLD2.png)
+
+
+
+# HLD
+<img src="./HLD2.png" alt="이미지 설명" width="300" height="200"/>
